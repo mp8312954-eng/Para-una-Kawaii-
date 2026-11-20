@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una sorpresa kawaii ♡</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Trebuchet MS',Arial;color:#75445f;background:linear-gradient(135deg,#ffe5f1,#fff,#ffd9eb);overflow-x:hidden}
+.page{min-height:100vh;padding:25px 14px 45px;background-image:radial-gradient(#f58ab9 1.2px,transparent 1.2px);background-size:22px 22px}
+.wrap{max-width:760px;margin:auto}
+header{text-align:center;padding:20px 8px}
+.kicker{background:white;border:2px dashed #f6a3c6;border-radius:30px;padding:8px 16px}
+h1{font-size:clamp(2rem,7vw,3.3rem);color:#df5796;text-shadow:2px 3px white}
+.card{background:#ffffffed;border:3px solid #ffc0dc;border-radius:28px;padding:22px 18px;box-shadow:0 12px 30px #d86b9b25}
+.top-friends,.inline-friends{display:flex;justify-content:center;align-items:center;gap:15px;flex-wrap:wrap;margin:20px 0}
+.friend{text-align:center;color:#c14d86;font-weight:bold;font-size:13px}
+.mini{width:75px;height:75px;position:relative;display:inline-block}
+.face{position:absolute;width:60px;height:55px;left:8px;top:15px;background:#fffdfb;border:2px solid #684e5c;border-radius:46%;box-shadow:inset 0 -4px #f8e6ec}
+.ear{position:absolute;width:22px;height:35px;background:#fff;border:2px solid #684e5c;border-radius:60% 60% 30% 30%;top:0;z-index:0}
+.ear.l{left:12px;transform:rotate(-17deg)}
+.ear.r{right:12px;transform:rotate(17deg)}
+.eye{position:absolute;width:5px;height:7px;background:#513d49;border-radius:50%;top:37px;z-index:2}
+.eye.l{left:25px}.eye.r{right:25px}
+.blush{position:absolute;width:11px;height:6px;background:#ffadc9;border-radius:50%;top:46px;z-index:2}
+.blush.l{left:14px}.blush.r{right:14px}
+.mouth{position:absolute;left:37px;top:45px;font-size:10px;z-index:3}
+.hachi .face:before{content:"";position:absolute;left:-2px;right:-2px;top:-2px;height:24px;background:#8ab4e8;border:2px solid #684e5c;border-radius:35px 35px 8px 8px}
+.usagi .ear{height:52px;width:17px;background:#fff0cf}
+.usagi .ear.l{left:20px}.usagi .ear.r{right:20px}
+.usagi .face{background:#fff8e9}
+.message{font-size:1.04rem;line-height:1.8}
+.message p{margin-bottom:17px}
+.inline-friends .mini{transform:scale(.8);margin:-5px}
+.sticker{background:#fff0f7;border:1px solid #ffc2dd;border-radius:13px;padding:3px 8px;color:#d64f91;font-weight:bold}
+.signature{text-align:center;color:#d64f91;font-weight:bold;margin-top:20px}
+.surprise-area{text-align:center;margin-top:25px}
+button{border:0;border-radius:30px;background:linear-gradient(135deg,#f77fb4,#e65c9b);color:white;padding:15px 24px;font-size:16px;font-weight:bold;box-shadow:0 5px 0 #c64b83;cursor:pointer}
+.hint{color:#a85b80}
+.reveal{display:none;margin:20px auto;padding:20px;border:2px dashed #f29ac0;border-radius:22px;background:#fff6fb;max-width:470px;animation:pop .5s}
+.reveal.show{display:block}
+.bouquet{font-size:4rem;animation:sway 2s infinite}
+.reveal h2{color:#d94f91}
+.reveal p{line-height:1.6}
+.floating{position:fixed;top:-35px;z-index:5;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:.1}}
+@keyframes pop{from{transform:scale(.75);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes sway{0%,100%{transform:rotate(-5deg)}50%{transform:rotate(5deg)}}
+footer{text-align:center;color:#bd7296;margin-top:20px}
+@media(min-width:600px){.card{padding:30px 34px}}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="wrap">
+
+<header>
+<span class="kicker">♡ Un detallito para ti ♡</span>
+<h1>¡Holiii, baka-chan! 🎀</h1>
+<p>Chiikawa, Hachiware y Usagi vinieron a dejarte un mensajito~</p>
+</header>
+
+<div class="top-friends">
+<div class="friend">
+<span class="mini">
+<span class="ear l"></span><span class="ear r"></span>
+<span class="face"></span>
+<i class="eye l"></i><i class="eye r"></i>
+<i class="blush l"></i><i class="blush r"></i>
+<b class="mouth">ᴗ</b>
+</span><br>Chiikawa
+</div>
+
+<div class="friend hachi">
+<span class="mini hachi">
+<span class="ear l"></span><span class="ear r"></span>
+<span class="face"></span>
+<i class="eye l"></i><i class="eye r"></i>
+<i class="blush l"></i><i class="blush r"></i>
+<b class="mouth">ᴗ</b>
+</span><br>Hachiware
+</div>
+
+<div class="friend usagi">
+<span class="mini usagi">
+<span class="ear l"></span><span class="ear r"></span>
+<span class="face"></span>
+<i class="eye l"></i><i class="eye r"></i>
+<i class="blush l"></i><i class="blush r"></i>
+<b class="mouth">ᴗ</b>
+</span><br>Usagi
+</div>
+</div>
+
+<main class="card">
+<div class="message">
+
+<p>Nyaaa~!! (≧▽≦)ﾉ♡ ¡Atención, atención! Este es un comunicado muy importante del escuadrón kawaii: queda estrictamente prohibido olvidar lo valiosa que eres, ¿entendido, baka-chan? >:c</p>
+
+<div class="inline-friends">
+<span style="font-size:40px">🐻‍❄️</span>
+<span style="font-size:40px">🐱</span>
+<span style="font-size:40px">🐰</span>
+</div>
+
+<p>Bueno, ahora sí, hablando en serio un momentito. Sé que últimamente las cosas no han salido como esperabas y que quizá tienes el corazoncito un poquito triste. Cuando alguien a quien le tenemos cariño se va, duele, y no tienes que fingir que no pasa nada. Está bien sentirte así, tomarte tu tiempo y tener días en los que simplemente no tengas ganas de sonreír.</p>
+
+<p>Pero quiero recordarte algo, senpai: que una persona haya decidido terminar una relación no significa que tú valgas menos, que no seas suficiente o que tengas algo malo. No tienes que cambiar quién eres para conseguir que alguien se quede. Sigues siendo tú, con esa forma tan tuya de ser, y eso merece muchísimo cariño y respeto.</p>
+
+<p>Así que nada de hablarte feo ni de echarte la culpa por todo, ¿sí? Si hoy toca llorar, pues se llora. Si toca descansar, se descansa. Y si toca distraerse con tonterías, ¡el equipo Chiikawa está oficialmente disponible para hacer payasadas! Usagi probablemente ya está gritando <span class="sticker">U R A A A~!!</span> sin saber qué está pasando. JAJAJA.</p>
+
+<div class="inline-friends">
+<span style="font-size:35px">🐰💗</span>
+<span style="font-size:35px">🐻‍❄️🌸</span>
+<span style="font-size:35px">🐱✨</span>
+</div>
+
+<p>También quiero que sepas que puedes contar conmigo para hablar, desahogarte, reírte de cualquier tontería o simplemente tener compañía. No tienes que encontrar las palabras perfectas ni fingir que estás de buen humor. A veces basta con decir «hoy no estoy bien» y dejar que alguien te escuche.</p>
+
+<p>Y por favor, no olvides hacer cositas bonitas por ti: escuchar una canción que te guste, comer algo rico, descansar, ver algo que te haga reír o salir un ratito a tomar aire. Poquito a poquito, sin presionarte. No tienes que estar bien de golpe.</p>
+
+<p>¡Gambare, gambare! (ง •̀_•́)ง♡ Eres mucho más fuerte de lo que crees, pero tampoco tienes que ser fuerte todo el tiempo. Mereces tranquilidad, amistades bonitas, momentos felices y personas que te traten con el mismo cariño que tú das.</p>
+
+<p>Y este mensaje viene con tres ayudantes muy especiales: Chiikawa te manda un abrazote, Hachiware te desea un día más bonito y Usagi… bueno, Usagi te manda un <span class="sticker">WAAAH!!</span> acompañado de energía infinita. Nyaa~ ♡</p>
+
+</div>
+
+<div class="signature">Con cariño, tu onii-chan de confianza ♡</div>
+</main>
+
+<div class="surprise-area">
+<p class="hint">Psst... todavía hay una cosita para ti 👀</p>
+<button id="surpriseBtn">Toca aquí para la sorpresa ♡</button>
+
+<div class="reveal" id="reveal">
+<div class="bouquet">💐🌹🌹</div>
+<h2>¡Sorpresaaaa! 🌷</h2>
+<p>Chiikawa te preparó un ramito de rosas con mucho cariño.</p>
+<p>Que hoy te llegue un poquito de ternura, una sonrisa y un montón de cosas bonitas. Nyaaa~ ♡</p>
+<div style="font-size:45px">🐻‍❄️ 🌹 🐱 🌹 🐰</div>
+</div>
+</div>
+
+<footer>Hecho con muchísimos corazoncitos ♡</footer>
+</div>
+</div>
+
+<script>
+const btn=document.getElementById('surpriseBtn');
+const reveal=document.getElementById('reveal');
+
+btn.addEventListener('click',()=>{
+reveal.classList.add('show');
+btn.textContent='¡Sorpresa desbloqueada! ♡';
+
+for(let i=0;i<24;i++){
+const f=document.createElement('span');
+f.className='floating';
+f.textContent=['🌹','🌸','💗','✨'][Math.floor(Math.random()*4)];
+f.style.left=Math.random()*100+'vw';
+f.style.animationDuration=(3+Math.random()*3)+'s';
+f.style.fontSize=(16+Math.random()*18)+'px';
+document.body.appendChild(f);
+setTimeout(()=>f.remove(),6500);
+}
+});
+</script>
+</body>
+</html>
